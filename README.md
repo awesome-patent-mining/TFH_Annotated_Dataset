@@ -48,7 +48,7 @@ The well-crafted information schema used for patent annotation contains 17 types
 
 There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format, which contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 1 and Fig. 2, respectively. 
 
-![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/entity_histogram.png)
+![](.\image\entity_histogram.png)
 
 **Fig. 1** The distribution of different semantic relation types.
 
