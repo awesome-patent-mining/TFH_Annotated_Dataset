@@ -1,4 +1,4 @@
-###### Dataset Introduction
+#### Dataset Introduction
 
 TFH_Annotated_Dataset is an annotated patent dataset pertaining to *thin film head* technology in hard-disk. To the best of our knowledge, this is the first labeled patent dataset public available in technology management domain that annotates both entities and the semantic relations between entities. 
 
@@ -48,15 +48,15 @@ The well-crafted information schema used for patent annotation contains 17 types
 
 There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format, which contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 1 and Fig. 2, respectively. 
 
-![](I:\中国科学技术信息研究所\我的文章\2019 BiGRU_GCN\文章零\scim外审专家第二次意见_返修后提交\entity_histogram.png)
+![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/entity_histogram.png)
 
 **Fig. 1** The distribution of different semantic relation types.
 
-![](I:\中国科学技术信息研究所\我的文章\2019 BiGRU_GCN\文章零\scim外审专家第二次意见_返修后提交\relation_histogram.png)
+![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/relation_histogram.png)
 
 **Fig. 2** The distribution of different semantic relation types.
 
-###### Information extraction results with deep learning models
+#### Information extraction results with deep learning models
 
 With TFH_Annotated_Dataset, we run two tasks of information extraction including named entity recognition  with BiLSTM-CRF[2] and semantic relation extractionand with BiGRU-2ATTENTION[3]. For improving semantic representation of patent language, the word embeddings are trained with the abstract of 46,302 patents regarding magnetic head in hard disk drive, which  turn out to improve the performance of  named entity recognition by 0.3% and semantic relation extraction by about 2% in weighted average F1, compared to GloVe and the patent word embedding provided by Risch et al[4].
 
@@ -64,7 +64,7 @@ For named entity recognition, the weighted-average precision, recall, F1-value o
 
 The precision, recall, and F1-value for each type of entity is shown in Fig. 3.
 
-![](I:\中国科学技术信息研究所\我的文章\2019 BiGRU_GCN\文章零\scim外审专家第二次意见\entity_identification_mk_46.png)
+![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/entity_identification_mk_46.png)
 
 **Fig.3** Result of BiLSTM-CRF for named entity recognition.
 
@@ -72,13 +72,13 @@ As to relation extraction,  the weighted-average precision, recall, F1-value of 
 
 The precision, recall, and F1-value for each type of relation is shown in Fig. 4.
 
-![](I:\中国科学技术信息研究所\我的文章\2019 BiGRU_GCN\文章零\scim外审专家第二次意见\relation_extraction_MH_46.png)
+![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/relation_extraction_MH_46.png)
 
 **Fig. 4** Result of BiGRU-HAN for semantic relation extraction.
 
 The relevant paper will be published soon, welcome to use TFH annotated dataset and cite our paper!
 
-###### REFERENCE
+#### REFERENCE
 
 [1] Stenetorp, P., Pyysalo, S., Topić, G., Ohta, T., Ananiadou, S., & Tsujii, J. I. (2012). BRAT: a web-based tool for NLP-assisted text annotation. In Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics (pp. 102-107)
 
