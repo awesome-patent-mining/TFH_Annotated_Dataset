@@ -48,11 +48,11 @@ The well-crafted information schema used for patent annotation contains 17 types
 
 There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format, which contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 1 and Fig. 2, respectively. 
 
-![](./image/entity_histogram.png)
+![](https://gitee.com/awesome_patent_mining/TFH_Annotated_dataset/blob/master/images/entity_histogram.png)
 
 **Fig. 1** The distribution of different semantic relation types.
 
-![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/relation_histogram.png)
+![](https://gitee.com/awesome_patent_mining/TFH_Annotated_dataset/blob/master/images/relation_histogram.png)
 
 **Fig. 2** The distribution of different semantic relation types.
 
@@ -64,7 +64,7 @@ For named entity recognition, the weighted-average precision, recall, F1-value o
 
 The precision, recall, and F1-value for each type of entity is shown in Fig. 3.
 
-![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/entity_identification_mk_46.png)
+![](https://gitee.com/awesome_patent_mining/TFH_Annotated_dataset/blob/master/images/entity_identification_mk_46.png)
 
 **Fig.3** Result of BiLSTM-CRF for named entity recognition.
 
@@ -72,7 +72,7 @@ As to relation extraction,  the weighted-average precision, recall, F1-value of 
 
 The precision, recall, and F1-value for each type of relation is shown in Fig. 4.
 
-![](https://github.com/awesome-patent-mining/TFH_Annotated_Dataset/blob/master/image/relation_extraction_MH_46.png)
+![](https://gitee.com/awesome_patent_mining/TFH_Annotated_dataset/blob/master/images/relation_extraction_MH_46.png)
 
 **Fig. 4** Result of BiGRU-HAN for semantic relation extraction.
 
