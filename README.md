@@ -45,7 +45,7 @@ The well-crafted information schema used for patent annotation contains 17 types
 | measurement        | one entity acts as a way to measure the other entity        | This provides a relative **permeance** of at least **1000**  |
 | other              | not belongs to the above types                              | Then, **MR resistance estimate** during polishing step is calculated from **S value** and K value |
 
-There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. The benefit it brings is that you can display and manipulate the annotated data right away once TFH_Annotated_Dataset.zip is unzipped and placed in the corresponding repository of Brat, as shown in Fig. 1.
+There are 1010 patent abstracts with 3,981 sentences in this corpus . We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once TFH_Annotated_Dataset.zip is unzipped in the corresponding repository of Brat, here we provide a demo as shown in Fig. 1.
 
 ![check ./image/brat_example.png in case image can't be shown](./image/brat_example.png)
 
@@ -80,7 +80,7 @@ The precision, recall, and F1-value for each type of relation is shown in Fig. 5
 
 **Fig. 5** Result of BiGRU-HAN for semantic relation extraction.
 
-The relevant paper will be published soon, welcome to use TFH annotated dataset and cite our paper!
+The relevant paper will be published soon, welcome to use TFH_annotated_dataset and cite our paper!
 
 ## **REFERENCE**
 [1] Stenetorp, P., Pyysalo, S., Topić, G., Ohta, T., Ananiadou, S., & Tsujii, J. I. (2012). BRAT: a web-based tool for NLP-assisted text annotation. In Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics (pp. 102-107)
