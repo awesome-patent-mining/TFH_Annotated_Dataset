@@ -1,5 +1,5 @@
 ## **Dataset Introduction**
-----
+___
 TFH_Annotated_Dataset is an annotated patent dataset pertaining to *thin film head* technology in hard-disk. To the best of our knowledge, this is the first labeled patent dataset public available in technology management domain that annotates both entities and the semantic relations between entities. 
 
 The well-crafted information schema used for patent annotation contains 17 types of entities and 15 types of semantic relations as shown below.
@@ -57,7 +57,7 @@ There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. W
 **Fig. 2** The distribution of different semantic relation types.
 
 ## **Information extraction results with deep learning models**
-
+___
 With TFH_Annotated_Dataset, we run two tasks of information extraction including named entity recognition  with BiLSTM-CRF[2] and semantic relation extractionand with BiGRU-2ATTENTION[3]. For improving semantic representation of patent language, the word embeddings are trained with the abstract of 46,302 patents regarding magnetic head in hard disk drive, which  turn out to improve the performance of  named entity recognition by 0.3% and semantic relation extraction by about 2% in weighted average F1, compared to GloVe and the patent word embedding provided by Risch et al[4].
 
 For named entity recognition, the weighted-average precision, recall, F1-value of BiLSTM-CRF on entity-level for the test set are 78.5%, 78.0%, and 78.2%, respectively. Although such performance is acceptable, it is still lower than its performance on general-purpose dataset by more than 10% in F1-value. The main reason is the limited amount of labeled dataset. 
@@ -78,8 +78,8 @@ The precision, recall, and F1-value for each type of relation is shown in Fig. 4
 
 The relevant paper will be published soon, welcome to use TFH annotated dataset and cite our paper!
 
-#### REFERENCE
-
+## **REFERENCE**
+___
 [1] Stenetorp, P., Pyysalo, S., Topić, G., Ohta, T., Ananiadou, S., & Tsujii, J. I. (2012). BRAT: a web-based tool for NLP-assisted text annotation. In Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics (pp. 102-107)
 
 [2] Huang, Z., Xu, W., &Yu, K. (2015). Bidirectional LSTM-CRF models for sequence tagging. arXiv preprint arXiv:1508.01991
