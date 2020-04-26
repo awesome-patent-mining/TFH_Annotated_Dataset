@@ -45,34 +45,38 @@ The well-crafted information schema used for patent annotation contains 17 types
 | measurement        | one entity acts as a way to measure the other entity        | This provides a relative **permeance** of at least **1000**  |
 | other              | not belongs to the above types                              | Then, **MR resistance estimate** during polishing step is calculated from **S value** and K value |
 
-There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. TFH_Annotated_Dataset contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 1 and Fig. 2, respectively. 
+There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. The benefit it brings is that you can display and manipulate the annotated data right away once TFH_Annotated_Dataset.zip is unzipped and placed in the corresponding repository of Brat, as shown in Fig. 1.
+
+![check ./image/brat_example.png in case image can't be shown](./image/brat_example.png)
+
+TFH_Annotated_Dataset contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 2 and Fig. 3, respectively. 
 
 ![check ./image/entity_histogram.png in case image can't be shown](./image/entity_histogram.png)
 
-**Fig. 1** The distribution of different semantic relation types.
+**Fig. 2** The distribution of different semantic relation types.
 
 ![check ./image/relation_histogram.png in case image can't be shown](./image/relation_histogram.png)
 
-**Fig. 2** The distribution of different semantic relation types.
+**Fig. 3** The distribution of different semantic relation types.
 
 ## **Information extraction results with deep learning models**
 With TFH_Annotated_Dataset, we run two tasks of information extraction including named entity recognition  with BiLSTM-CRF[2] and semantic relation extractionand with BiGRU-2ATTENTION[3]. For improving semantic representation of patent language, the word embeddings are trained with the abstract of 46,302 patents regarding magnetic head in hard disk drive, which  turn out to improve the performance of  named entity recognition by 0.3% and semantic relation extraction by about 2% in weighted average F1, compared to GloVe and the patent word embedding provided by Risch et al[4].
 
 For named entity recognition, the weighted-average precision, recall, F1-value of BiLSTM-CRF on entity-level for the test set are 78.5%, 78.0%, and 78.2%, respectively. Although such performance is acceptable, it is still lower than its performance on general-purpose dataset by more than 10% in F1-value. The main reason is the limited amount of labeled dataset. 
 
-The precision, recall, and F1-value for each type of entity is shown in Fig. 3.
+The precision, recall, and F1-value for each type of entity is shown in Fig. 4.
 
 ![check ./image/entity_identification_mk_46.png in case image can't be shown](./image/entity_identification_mk_46.png)
 
-**Fig.3** Result of BiLSTM-CRF for named entity recognition.
+**Fig.4** Result of BiLSTM-CRF for named entity recognition.
 
 As to relation extraction,  the weighted-average precision, recall, F1-value of BiGRU-2ATTENTION for the test set are 78.5%, 78.0%, and 78.2% with no_edge relations, and 32.3%, 41.5%, 36.3% without no_edge relations. 
 
-The precision, recall, and F1-value for each type of relation is shown in Fig. 4.
+The precision, recall, and F1-value for each type of relation is shown in Fig. 5.
 
 ![check ./image/relation_extraction_MH_46.png in case image can't be shown](./image/relation_extraction_MH_46.png)
 
-**Fig. 4** Result of BiGRU-HAN for semantic relation extraction.
+**Fig. 5** Result of BiGRU-HAN for semantic relation extraction.
 
 The relevant paper will be published soon, welcome to use TFH annotated dataset and cite our paper!
 
