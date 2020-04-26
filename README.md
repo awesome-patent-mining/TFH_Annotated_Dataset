@@ -1,5 +1,5 @@
-#### Dataset Introduction
-
+## **Dataset Introduction**
+----
 TFH_Annotated_Dataset is an annotated patent dataset pertaining to *thin film head* technology in hard-disk. To the best of our knowledge, this is the first labeled patent dataset public available in technology management domain that annotates both entities and the semantic relations between entities. 
 
 The well-crafted information schema used for patent annotation contains 17 types of entities and 15 types of semantic relations as shown below.
@@ -48,7 +48,7 @@ The well-crafted information schema used for patent annotation contains 17 types
 
 There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format, which contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 1 and Fig. 2, respectively. 
 
-![](.\image\entity_histogram.png)
+![](./image/entity_histogram.png)
 
 **Fig. 1** The distribution of different semantic relation types.
 
@@ -56,7 +56,7 @@ There are 1010 patent abstracts in this corpus, which contain 3,981 sentences. W
 
 **Fig. 2** The distribution of different semantic relation types.
 
-#### Information extraction results with deep learning models
+## **Information extraction results with deep learning models**
 
 With TFH_Annotated_Dataset, we run two tasks of information extraction including named entity recognition  with BiLSTM-CRF[2] and semantic relation extractionand with BiGRU-2ATTENTION[3]. For improving semantic representation of patent language, the word embeddings are trained with the abstract of 46,302 patents regarding magnetic head in hard disk drive, which  turn out to improve the performance of  named entity recognition by 0.3% and semantic relation extraction by about 2% in weighted average F1, compared to GloVe and the patent word embedding provided by Risch et al[4].
 
