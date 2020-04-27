@@ -47,17 +47,17 @@ The well-crafted information schema used for patent annotation contains 17 types
 
 There are 1010 patent abstracts with 3,981 sentences in this corpus . We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once TFH_Annotated_Dataset.zip is unzipped in the corresponding repository of Brat, here we provide a demo as shown in Fig. 1.
 
-![check ./image/brat_example.png in case image can't be shown](./image/brat_example.png)
+![check ./image/brat_example.png if the image can't be loaded](./image/brat_example.png)
 
 **Fig. 1** The demo of TFH_Annotated_Dataset
 
 TFH_Annotated_Dataset contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 2 and Fig. 3, respectively. 
 
-![check ./image/entity_histogram.png in case image can't be shown](./image/entity_histogram.png)
+![check ./image/entity_histogram.png if the image can't be loaded](./image/entity_histogram.png)
 
 **Fig. 2** The distribution of different semantic relation types.
 
-![check ./image/relation_histogram.png in case image can't be shown](./image/relation_histogram.png)
+![check ./image/relation_histogram.png if the image can't be loaded](./image/relation_histogram.png)
 
 **Fig. 3** The distribution of different semantic relation types.
 
@@ -68,7 +68,7 @@ For named entity recognition, the weighted-average precision, recall, F1-value o
 
 The precision, recall, and F1-value for each type of entity is shown in Fig. 4.
 
-![check ./image/entity_identification_mk_46.png in case image can't be shown](./image/entity_identification_mk_46.png)
+![check ./image/entity_identification_mk_46.png if the image can't be loaded](./image/entity_identification_mk_46.png)
 
 **Fig.4** Result of BiLSTM-CRF for named entity recognition.
 
@@ -76,7 +76,7 @@ As to relation extraction,  the weighted-average precision, recall, F1-value of 
 
 The precision, recall, and F1-value for each type of relation is shown in Fig. 5.
 
-![check ./image/relation_extraction_MH_46.png in case image can't be shown](./image/relation_extraction_MH_46.png)
+![check ./image/relation_extraction_MH_46.png if the image can't be loaded](./image/relation_extraction_MH_46.png)
 
 **Fig. 5** Result of BiGRU-HAN for semantic relation extraction.
 
