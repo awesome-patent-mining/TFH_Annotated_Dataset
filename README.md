@@ -45,13 +45,13 @@ The well-crafted information schema used for patent annotation contains 17 types
 | measurement        | one entity acts as a way to measure the other entity        | This provides a relative **permeance** of at least **1000**  |
 | other              | not belongs to the above types                              | Then, **MR resistance estimate** during polishing step is calculated from **S value** and K value |
 
-There are 1010 patent abstracts with 3,981 sentences in this corpus . We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once TFH_Annotated_Dataset.zip is unzipped in the corresponding repository of Brat, here we provide a demo as shown in Fig. 1.
+There are 1010 patent abstracts with 3,996 sentences in this corpus . We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once TFH_Annotated_Dataset.zip is unzipped in the corresponding repository of Brat, here we provide a demo as shown in Fig. 1.
 
 ![check ./image/brat_example.png if the image can't be loaded](./image/brat_example.png)
 
 **Fig. 1** The demo of TFH_Annotated_Dataset
 
-TFH_Annotated_Dataset contains 22,742 entity mentions and 17,421 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 2 and Fig. 3, respectively. 
+TFH_Annotated_Dataset contains 22,833 entity mentions and 17,468 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 2 and Fig. 3, respectively. 
 
 ![check ./image/entity_histogram.png if the image can't be loaded](./image/entity_histogram.png)
 
