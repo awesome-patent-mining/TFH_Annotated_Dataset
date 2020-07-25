@@ -80,7 +80,10 @@ The precision, recall, and F1-value for each type of relation is shown in Fig. 5
 
 **Fig. 5** Result of BiGRU-HAN for semantic relation extraction.
 
-The relevant paper will be published soon, welcome to use TFH_annotated_dataset and cite our paper!
+## **Academic citing**
+
+Chen, L., Xu, S., Zhu, L. et al. A deep learning based method for extracting semantic information from patent documents. Scientometrics (2020). https://doi.org/10.1007/s11192-020-03634-y  
+https://link.springer.com/article/10.1007/s11192-020-03634-y
 
 ## **REFERENCE**
 [1] Stenetorp, P., Pyysalo, S., Topić, G., Ohta, T., Ananiadou, S., & Tsujii, J. I. (2012). BRAT: a web-based tool for NLP-assisted text annotation. In Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics (pp. 102-107)
