@@ -82,6 +82,9 @@ The precision, recall, and F1-value for each type of relation is shown in Fig. 5
 
 ## **Academic citing**
 
+A demo is provided for data browsing via [brat](http://http://121.36.92.58:8001/index.xhtml)
+## **Academic citing**
+
 Chen, L., Xu, S., Zhu, L. et al. A deep learning based method for extracting semantic information from patent documents. Scientometrics (2020). https://doi.org/10.1007/s11192-020-03634-y
 
 ## **Paper link**
