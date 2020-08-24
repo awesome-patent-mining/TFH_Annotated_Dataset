@@ -82,7 +82,7 @@ The precision, recall, and F1-value for each type of relation is shown in Fig. 5
 
 ## **TFH_ANNOTATED_DATASET Browsing**
 
-A BRAT system is provided for browsing TFH_ANNOTATED_DATASET via [BRAT DEMO](http://121.36.92.58:8001/index.xhtml)
+[A BRAT system](http://121.36.92.58:8001) is provided for browsing TFH_ANNOTATED_DATASET.
 ## **Academic citing**
 
 Chen, L., Xu, S., Zhu, L. et al. A deep learning based method for extracting semantic information from patent documents. Scientometrics (2020). https://doi.org/10.1007/s11192-020-03634-y
