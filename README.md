@@ -84,7 +84,7 @@ The precision, recall, and F1-value for each type of relation is shown in Fig. 5
 
 [A BRAT system](http://121.36.92.58:8001) is provided for browsing TFH_ANNOTATED_DATASET.
 
-## **The information extraction result produced by model trained with TFH_ANNOTATED_DATASET**
+## **The result produced by model trained with TFH_ANNOTATED_DATASET**
 
 [Another BRAT system](http://121.36.92.58:8002) is provided for browsing the predicted result.
 ## **Academic citing**
