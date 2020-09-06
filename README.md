@@ -72,7 +72,7 @@ The precision, recall, and F1-value for each type of entity is shown in Fig. 4.
 
 **Fig.4** Result of BiLSTM-CRF for named entity recognition.
 
-As to relation extraction,  the weighted-average precision, recall, F1-value of BiGRU-2ATTENTION for the test set are 78.5%, 78.0%, and 78.2% with no_edge relations, and 32.3%, 41.5%, 36.3% without no_edge relations. 
+As to relation extraction,  the weighted-average precision, recall, F1-value of BiGRU-2ATTENTION for the test set are 89.7%, 87.9%, and 88.6% with no_edge relations, and 32.3%, 41.5%, 36.3% without no_edge relations. 
 
 The precision, recall, and F1-value for each type of relation is shown in Fig. 5.
 
