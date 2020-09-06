@@ -1,5 +1,5 @@
 ## **Dataset Introduction**
-TFH_Annotated_Dataset is an annotated patent dataset pertaining to *thin film head* technology in hard-disk. To the best of our knowledge, this is the first labeled patent dataset public available in technology management domain that annotates both entities and the semantic relations between entities. 
+TFH_Annotated_Dataset is an annotated patent dataset pertaining to *thin film head* technology in hard-disk. To the best of our knowledge, this is the second labeled patent dataset public available in technology management domain that annotates both entities and the semantic relations between entities, the first one is [1]. 
 
 The well-crafted information schema used for patent annotation contains 17 types of entities and 15 types of semantic relations as shown below.
 
@@ -45,7 +45,7 @@ The well-crafted information schema used for patent annotation contains 17 types
 | measurement        | one entity acts as a way to measure the other entity        | This provides a relative **permeance** of at least **1000**  |
 | other              | not belongs to the above types                              | Then, **MR resistance estimate** during polishing step is calculated from **S value** and K value |
 
-There are 1010 patent abstracts with 3,996 sentences in this corpus . We use a web-based annotation tool named *Brat*[1] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once TFH_Annotated_Dataset.zip is unzipped in the corresponding repository of Brat, here we provide a demo as shown in Fig. 1.
+There are 1010 patent abstracts with 3,996 sentences in this corpus . We use a web-based annotation tool named *Brat*[2] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once the TFH_Annotated_Dataset.zip is unzipped under corresponding repository of Brat, here we provide a demo as shown in Fig. 1, you can also visit the demo via [BRAT DEMO](http://121.36.92.58:8002).  
 
 ![check ./image/brat_example.png if the image can't be loaded](./image/brat_example.png)
 
@@ -62,7 +62,7 @@ TFH_Annotated_Dataset contains 22,833 entity mentions and 17,468 semantic relati
 **Fig. 3** The distribution of different semantic relation types.
 
 ## **Information extraction results with deep learning models**
-With TFH_Annotated_Dataset, we run two tasks of information extraction including named entity recognition  with BiLSTM-CRF[2] and semantic relation extractionand with BiGRU-2ATTENTION[3]. For improving semantic representation of patent language, the word embeddings are trained with the abstract of 46,302 patents regarding magnetic head in hard disk drive, which  turn out to improve the performance of  named entity recognition by 0.3% and semantic relation extraction by about 2% in weighted average F1, compared to GloVe and the patent word embedding provided by Risch et al[4].
+With TFH_Annotated_Dataset, we run two tasks of information extraction including named entity recognition  with BiLSTM-CRF[3] and semantic relation extractionand with BiGRU-2ATTENTION[4]. For improving semantic representation of patent language, the word embeddings are trained with the abstract of 46,302 patents regarding magnetic head in hard disk drive, which  turn out to improve the performance of  named entity recognition by 0.3% and semantic relation extraction by about 2% in weighted average F1, compared to GloVe and the patent word embedding provided by Risch et al[5].
 
 For named entity recognition, the weighted-average precision, recall, F1-value of BiLSTM-CRF on entity-level for the test set are 78.5%, 78.0%, and 78.2%, respectively. Although such performance is acceptable, it is still lower than its performance on general-purpose dataset by more than 10% in F1-value. The main reason is the limited amount of labeled dataset. 
 
@@ -96,10 +96,12 @@ Chen, L., Xu, S., Zhu, L. et al. A deep learning based method for extracting sem
 https://link.springer.com/article/10.1007/s11192-020-03634-y
 
 ## **REFERENCE**
-[1] Stenetorp, P., Pyysalo, S., Topić, G., Ohta, T., Ananiadou, S., & Tsujii, J. I. (2012). BRAT: a web-based tool for NLP-assisted text annotation. In Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics (pp. 102-107)
+[1] Pérez-Pérez, M., Pérez-Rodríguez, G., Vazquez, M., Fdez-Riverola, F., Oyarzabal, J., Oyarzabal, J., Valencia,A., Lourenço, A., & Krallinger, M. (2017). Evaluation of chemical and gene/protein entity recognition systems at BioCreative V.5: The CEMP and GPRO patents tracks. In Proceedings of the Bio-Creative V.5 challenge evaluation workshop, pp. 11–18.  
 
-[2] Huang, Z., Xu, W., &Yu, K. (2015). Bidirectional LSTM-CRF models for sequence tagging. arXiv preprint arXiv:1508.01991
+[2] Stenetorp, P., Pyysalo, S., Topić, G., Ohta, T., Ananiadou, S., & Tsujii, J. I. (2012). BRAT: a web-based tool for NLP-assisted text annotation. In Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics (pp. 102-107)
 
-[3] Han,X., Gao,T., Yao,Y., Ye,D., Liu,Z., Sun, M.(2019). OpenNRE: An Open and Extensible Toolkit for Neural Relation Extraction. arXiv preprint arXiv: 1301.3781
+[3] Huang, Z., Xu, W., &Yu, K. (2015). Bidirectional LSTM-CRF models for sequence tagging. arXiv preprint arXiv:1508.01991
 
-[4] Risch, J., & Krestel, R. (2019). Domain-specific word embeddings for patent classification. Data Technologies and Applications, 53(1), 108–122. 
+[4] Han,X., Gao,T., Yao,Y., Ye,D., Liu,Z., Sun, M.(2019). OpenNRE: An Open and Extensible Toolkit for Neural Relation Extraction. arXiv preprint arXiv: 1301.3781
+
+[5] Risch, J., & Krestel, R. (2019). Domain-specific word embeddings for patent classification. Data Technologies and Applications, 53(1), 108–122. 
