@@ -51,7 +51,7 @@ There are 1010 patent abstracts with 3,996 sentences in this corpus . We use a w
 
 **Fig. 1** The demo of TFH_Annotated_Dataset
 
-TFH_Annotated_Dataset contains 22,833 entity mentions and 17,468 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 2 and Fig. 3, respectively. 
+TFH_Annotated_Dataset contains 22,833 entity mentions and 17,412 semantic relation mentions. The statistics of entity and semantic relation types are illustrated in Fig. 2 and Fig. 3, respectively. 
 
 ![check ./image/entity_histogram.png if the image can't be loaded](./image/entity_histogram.png)
 
