@@ -45,7 +45,7 @@ The well-crafted information schema used for patent annotation contains 17 types
 | measurement        | one entity acts as a way to measure the other entity        | This provides a relative **permeance** of at least **1000**  |
 | other              | not belongs to the above types                              | Then, **MR resistance estimate** during polishing step is calculated from **S value** and K value |
 
-There are 1010 patent abstracts with 3,996 sentences in this corpus . We use a web-based annotation tool named *Brat*[2] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once the TFH_Annotated_Dataset.zip is unzipped under corresponding repository of Brat, here we provide a demo as shown in Fig. 1, you can also visit the demo via [BRAT DEMO](http://121.36.92.58:8002).  
+There are 1010 patent abstracts with 3,986 sentences in this corpus . We use a web-based annotation tool named *Brat*[2] for data labeling, and the annotated data is saved in '.ann' format. The benefit of 'ann' is that you can display and manipulate the annotated data once the TFH_Annotated_Dataset.zip is unzipped under corresponding repository of Brat, here we provide a demo as shown in Fig. 1, you can also visit the demo via [BRAT DEMO](http://121.36.92.58:8002).  
 
 ![check ./image/brat_example.png if the image can't be loaded](./image/brat_example.png)
 
